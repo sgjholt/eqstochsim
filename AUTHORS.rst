@@ -5,7 +5,7 @@ Credits
 Development Lead
 ----------------
 
-* James Holt <audreyr@example.com>
+* James Holt 
 
 Contributors
 ------------

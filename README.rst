@@ -16,7 +16,7 @@ eqstochsim
 
 
 
-A pA package to showcase the stochastic method to compute earthquake ground motions.
+A package to showcase the stochastic method to compute earthquake ground motions.
 
 
 * Free software: MIT license

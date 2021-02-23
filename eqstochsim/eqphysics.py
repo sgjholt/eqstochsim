@@ -98,3 +98,28 @@ def mw(mo: float, c: float = 6.0333) -> float:
     """
 
     return (2 / 3) * np.log10(mo) + c
+
+
+def moment_scaling(vs: float = 3500.0,
+                   rho: float = 2600.0,
+                   ro: float = 1000.0,
+                   fs: float = 2.0,
+                   rp: float = 0.55
+                   ) -> float:
+    """
+    The displacement to moment scaling factor (log10 units) at the source.
+
+    Parameters
+    ----------
+    vs : float
+        The shear-wave velocity at the rupture source (m [default] or km).
+    rho : float
+        The shear-wave density at the rupture source (kgm^-3 [default] or
+        gcm^-3).
+    ro : float
+        The reference distance from the source (m[default]=1000 or km).
+    fs :
+        Free surface amplification factor (2 for SH waves).
+    """
+
+    return np.log10((4 * np.pi * vs**3 * rho * ro) / (fs * rp))
